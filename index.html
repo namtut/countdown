@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Countdown Timer</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    </head>
+    <body>
+        
+        <div class="setTime-container">
+            <h3 class="set-el">Set time</h3>
+            <select class="set-el" id="timing">
+                <option value="90">90 mins</option>
+                <option value="60" selected>1 h</option>
+                <option value="30">30 mins</option>
+                <option value="25">25 mins</option>
+            </select>
+            <button id="start" class="set-el">Start</button>
+            <button id="continue" class="set-el">Continue</button>
+            <button id="stop" class="set-el">Stop</button>
+        </div>
+        <h1>Coutdowning from <span id="=jikan"></span> minutes</h1>
+        <div class="countdown-container">
+            <div class="countdown-el hours-container">
+                <p class="bigtext" id="hours">0</p>
+                <span>hours</span>
+            </div>
+
+            <div class="countdown-el" id="disappear">
+                <p class="bigtext">:</p>
+            </div>
+            
+            <div class="countdown-el minutes-container">
+                <p class="bigtext" id="minutes">0</p>
+                <span>minutes</span>
+            </div>
+
+            <div class="countdown-el">
+                <p class="bigtext">:</p>
+            </div>
+            
+            <div class="countdown-el seconds-container">
+                <p class="bigtext" id="seconds">0</p>
+                <span>seconds</span>
+            </div>
+        </div>
+
+        <div class="currentTime-container">
+            <div>
+                <span id="clock">Clock goes here</span>
+            </div>
+        </div>
+    </body>
+</html>
